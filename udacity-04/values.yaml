@@ -8,7 +8,7 @@ image:
   repository: abc1zbq/udacity-04
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1681021719"
+  tag: "1681032025"
 
 imagePullSecrets: []
 nameOverride: ""
