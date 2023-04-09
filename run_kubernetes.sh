@@ -19,4 +19,3 @@ kubectl get pods -n dev
 # Forward the container port to a host
 
 # no need, I use helm and forward use nodeport
-
