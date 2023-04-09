@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "udacity-04.fullname" . }}-test-connection"
+  labels:
+    {{- include "udacity-04.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "udacity-04.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
