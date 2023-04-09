@@ -12,4 +12,4 @@ echo $(docker images)
 # Run flask app
 
 # becuse I used port 80 for different application.
-docker run -it --rm --name udacity-04 -p 8000:80 udacity-04  
+docker run -it --rm --name udacity-04 -p 80:80 udacity-04  

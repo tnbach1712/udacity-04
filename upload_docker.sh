@@ -12,9 +12,9 @@ dockerpath=abc1zbq/udacity-04
 echo "Docker ID and Image: $dockerpath"
 # Login
 tag=$dockerpath:$(date +%s)
-docker login -u abc1zbq -p 6Den10kytu
+docker login -u abc1zbq -p *****
 docker tag udacity-04 $tag
 # Step 3:
 # Push image to a docker repository
 docker image push $tag
-docker image udacity-04:latest $tag
+docker image push udacity-04:latest
